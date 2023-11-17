@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-fahh
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/release-e2e-pyxis-tenant/appstudio/devfile-sample-python-basic-fahh@sha256:ad3edc0b298474ef6c5d4309e7d3ddc2f3472bd0b6b0846558de8ca306ac4c34
+        name: container-image
+        resources: {}
+status: {}
