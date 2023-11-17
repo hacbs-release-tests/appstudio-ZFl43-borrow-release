@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-vval
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/release-e2e-pyxis-tenant/appstudio/dc-metro-map-vval@sha256:cd9609e2f9396e05a7c8f761bb0f284cc955b151297cda0692f03b4eb434927f
+        name: my-nodejs
+        resources: {}
+status: {}
